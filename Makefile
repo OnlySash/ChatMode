@@ -8,8 +8,8 @@ TARGET := main
 SRC := main.c \
        src/wrapper_mpi.c \
        src/coordinator.c \
-       src/lane.c \
-       src/vehicle.c
+       src/client.c \
+       src/message.c
 
 BUILD_DIR := build
 OBJ := $(SRC:%.c=$(BUILD_DIR)/%.o)
