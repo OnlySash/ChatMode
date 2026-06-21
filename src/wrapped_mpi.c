@@ -30,6 +30,11 @@ void broadcast_numbers_processors(int* value, int source)
     MPI_Bcast(&value, 1, MPI_INT, source, MPI_COMM_WORLD);
 }
 
+void broadcast_general(Messages *sms)
+{
+    MPI_Bcast(sms, sizeof(Messages), MPI_BYTE, 0, MPI_COMM_WORLD);
+}
+
 void sync_processors(void)
 {
     MPI_Barrier(MPI_COMM_WORLD);

@@ -8,7 +8,15 @@ También puede registrar bitácoras y métricas globales.*/
 #include "../include/coordinator.h"
 #include "../include/wrapped_mpi.h"
 #include "../include/message.h"
-#include "../include/client.h"
+
+//Tabla de usernames
+User users[] = {
+    {1, "Sasha"},
+    {2, "Karina"},
+    {3, "Amber"},
+    {4, "Wendy"}
+};
+
 
 void en_linea(){
     // Avisa inicialmente que estan en lìnea
@@ -21,12 +29,24 @@ void en_linea(){
 
 }
 
-//coordina envìo y recivir mensajes
-
-void metricas(){
-
+//coordina envío y recibir mensajes
+void process_request(Messages* sms, Coordinator* state){
+    if (sms->mode == DIRECT) {
+        // Enviar mensaje directo al destinatario
+        send_string(sms->text, sms->receiver, MESSAGE_TAG);
+    } else if (sms->mode == BROADCAST) {
+        // Enviar mensaje de difusión a todos
+        broadcast_general(sms);
+    } else {
+        // Encolar si no hay capacidad
+        if (state->rear < 100) {
+            state->pending_queue[state->rear++] = sms->send_rank;
+        }
+    }
 }
 
+void metricas(){
+}
 void coordinator_run(){
     en_linea();
 }

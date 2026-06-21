@@ -24,6 +24,7 @@ void contacto_en_linea(int rank){
     send_string((char*) usernames[rank - 1], COORDINATOR, STATISTICS_TAG);
 }
 
+
 void tipo_mensaje(){
     //Que el usuario elija el tipo de mensaje (directo o difusión)
 }
@@ -38,9 +39,18 @@ void escribir_mensaje(){
     }
 }
 
-void esperar_mensaje(){
-    //Esperar a recibir un mensaje dirigido a este cliente
-    //receive_string(char* text, int length, int source, int tag);
+void mensaje_rand(){
+    
+}
 
+void esperar_mensaje(char* text, int length, int source, int tag){
+    //Esperar a recibir un mensaje dirigido a este cliente
+    receive_string(text, length, source, tag);
+    printf("Esperando mensaje, espera activa");
     //Mostrar el mensaje recibido al usuario
 }
+
+void protocol_run(){
+
+}
+

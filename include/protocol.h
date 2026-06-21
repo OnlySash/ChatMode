@@ -1,8 +1,5 @@
-#ifndef CLIENT_H
-#define CLIENT_H
-
-#define N_USERS 4
-#define MAX_MESSAGE 50
+#ifndef PROTOCOL_H
+#define PROTOCOL_H
 
 void contacto_en_linea(int rank);
 
@@ -12,4 +9,5 @@ void escribir_mensaje();
 
 void esperar_mensaje();
 
-#endif //CLIENT_H
+
+#endif //PROTOCOL_H

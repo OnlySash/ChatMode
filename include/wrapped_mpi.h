@@ -1,5 +1,8 @@
 #include <stddef.h>
 #include <mpi.h>
+
+#include "../include/message.h"
+
 #ifndef WRAPPED_MPI_H
 #define WRAPPED_MPI_H
 
@@ -15,6 +18,7 @@ void finalize_parallelization_mpi();
 
 // void check_numbers_processors(int size, int required);
 void broadcast_numbers_processors(int* value, int source);
+void broadcast_general(Messages *sms);
 void sync_processors(void);
 
 void send_int(int value, int destination, int tag);

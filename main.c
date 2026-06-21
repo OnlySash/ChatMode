@@ -27,6 +27,10 @@ void menu(){
         case 2:
             // Usar terminal automático
             coordinator_run();
+            {
+                int n_users = N_USERS;
+                broadcast_numbers_processors(&n_users, COORDINATOR);
+            }
             break;
         case 3:
             // Usar terminal manual
