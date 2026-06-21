@@ -6,7 +6,7 @@ LDLIBS ?=
 
 TARGET := main
 SRC := main.c \
-       src/wrapper_mpi.c \
+       src/wrapped_mpi.c \
        src/coordinator.c \
        src/client.c \
        src/message.c
@@ -19,4 +19,28 @@ MPIEXEC ?= mpiexec
 NP ?= 5
 ARGS ?=
 
+MPIEXEC ?= mpiexec
+NP ?= 5
+ARGS ?=
+
 .PHONY: all run clean rebuild
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CC) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+
+$(BUILD_DIR)/%.o: %.c
+	@mkdir -p $(dir $@)
+	$(CC) $(CPPFLAGS) $(CFLAGS) -MMD -MP -c $< -o $@
+
+run: $(TARGET)
+	$(MPIEXEC) --oversubscribe -n $(NP) ./$(TARGET) $(ARGS)
+
+clean:
+	$(RM) -r $(BUILD_DIR) $(TARGET)
+
+rebuild: clean all
+
+-include $(DEP)
