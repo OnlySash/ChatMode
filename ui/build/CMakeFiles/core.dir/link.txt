@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcore.a CMakeFiles/core.dir/core_autogen/mocs_compilation.cpp.o CMakeFiles/core.dir/home/sasha/Descargas/Practicas/ChatMode/ChatMode/src/wrapped_mpi.c.o CMakeFiles/core.dir/home/sasha/Descargas/Practicas/ChatMode/ChatMode/src/coordinator.c.o CMakeFiles/core.dir/home/sasha/Descargas/Practicas/ChatMode/ChatMode/src/protocol.c.o CMakeFiles/core.dir/home/sasha/Descargas/Practicas/ChatMode/ChatMode/src/message.c.o
+/usr/bin/ranlib libcore.a

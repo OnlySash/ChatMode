@@ -1,0 +1,13 @@
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/core.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/cli.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/ChatMode.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/ChatMode_other_files.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/run.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/edit_cache.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/rebuild_cache.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/core_autogen_timestamp_deps.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/core_autogen.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/cli_autogen_timestamp_deps.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/cli_autogen.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/ChatMode_autogen_timestamp_deps.dir
+/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/ChatMode_autogen.dir

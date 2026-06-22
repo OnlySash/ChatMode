@@ -1,11 +1,13 @@
 #ifndef PROTOCOL_H
 #define PROTOCOL_H
 
+#ifdef __cplusplus
+extern "C" {
+    #endif
+
 #include "../include/utils.h"
 
 void contact_online(int rank);
-
-void tipo_mensaje();
 
 void escribir_mensaje();
 
@@ -15,8 +17,8 @@ void message_rand(char *buf, int max_len);
 
 void esperar_mensaje(Messages *sms);
 
-//void process_messages(int rank);
-
-void protocol_run();
+#ifdef __cplusplus
+}
+#endif
 
 #endif //PROTOCOL_H

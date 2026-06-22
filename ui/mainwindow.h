@@ -11,57 +11,60 @@
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QMap>
+
+#include "receptor_mpi.h"   // ← solo esto, sin redefinir la clase
 
 extern "C" {
-    #include "../include/wrapped_mpi.h"
-    #include "../include/coordinator.h"
+#include "../include/wrapped_mpi.h"
+#include "../include/coordinator.h"
+#include "../include/protocol.h"
 }
-
-struct User {
-    int rank;
-    QString name;
-    QString avatar;  // ruta al PNG
-};
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    explicit MainWindow(int myRank, QWidget *parent = nullptr);
+    explicit MainWindow(int mi_rank, QWidget *parent = nullptr);
+    ~MainWindow();
 
 private slots:
-    void openChat(int userIndex);
-    void sendDirect();
-    void sendBroadcast();
-    void goBack();
+    void abrir_chat(int indice_usuario);
+    void enviar_directo();
+    void enviar_difusion();
+    void retroceder();
+    void mostrar_mensaje_recibido(int remitente, QString texto);
 
 private:
-    void setupStyles();
-    void buildChatList();    // pantalla principal — lista de chats
-    void buildChatView();    // pantalla de conversación
-    void buildBroadcast();   // pantalla de difusión
+    void configurar_estilos();
+    void construir_lista_chats();
+    void construir_vista_chat();
+    void construir_difusion();
+    void agregar_mensaje_recibido(const QString &remitente, const QString &texto);
 
-    int m_myRank;
-    QStackedWidget *m_stack;
+    int m_mi_rank;
+    QStackedWidget *m_pila;
 
-    // Pantalla principal
-    QWidget     *m_pageList;
-    QListWidget *m_chatList;
+    QWidget     *m_pagina_lista;
+    QListWidget *m_lista_chats;
 
-    // Pantalla de chat
-    QWidget    *m_pageChat;
-    QLabel     *m_chatHeader;
-    QTextEdit  *m_chatDisplay;
-    QLineEdit  *m_chatInput;
-    int         m_currentUser;
+    QWidget    *m_pagina_chat;
+    QLabel     *m_encabezado_chat;
+    QMap<int, QTextEdit*> m_visores_chat;
+    QTextEdit  *m_visor_chat_actual;
+    QLineEdit  *m_entrada_chat;
+    int         m_usuario_actual;
+    QWidget     *m_area_chat;
+    QWidget     *m_pagina_difusion;
+    QTextEdit   *m_visor_difusion;
+    QLineEdit   *m_entrada_difusion;
+    QListWidget *m_lista_destinatarios;
 
-    // Pantalla de difusión
-    QWidget   *m_pageBroadcast;
-    QTextEdit *m_broadcastDisplay;
-    QLineEdit *m_broadcastInput;
+    QList<User> m_usuarios;
+    QStringList m_avatares;
+    QMap<int, int> m_rank_a_indice;
 
-    // Usuarios preestablecidos
-    QList<User> m_users;
+    Receptor_MPI *m_receptor;
 };
 
 #endif

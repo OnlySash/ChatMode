@@ -7,6 +7,10 @@ extern "C" {
 
 #include "utils.h"
 
+extern User users[N_USERS];
+
+const char *get_username(int rank);
+
 void online();
 
 void metricas();

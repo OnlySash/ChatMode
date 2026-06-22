@@ -12,6 +12,7 @@ y reciben los mensajes dirigidos a ellos.
 #include <string.h>
 #include <stdlib.h>
 
+//Envia señañ en linea
 void contact_online(int rank){
     if (rank < 1 || rank > N_USERS) {
         printf("Rank %d no es un cliente válido\n", rank);
@@ -19,11 +20,6 @@ void contact_online(int rank){
     }
     send_int(rank, COORDINATOR,STATISTICS_TAG);
     //send_string((char*) usernames[rank - 1], COORDINATOR, STATISTICS_TAG);
-}
-
-
-void tipo_mensaje(){
-    //Que el usuario elija el tipo de mensaje (directo o difusión)
 }
 
 void escribir_mensaje(){
@@ -39,7 +35,7 @@ void escribir_mensaje(){
     }
 }
 
-//Para pruebas
+//Para pruebas crea un mensaje random
 void message_rand(char *buf, int max_len){
     int length = 3 + rand() % (max_len - 3);
     for (int i = 0; i < length; i++) {
@@ -55,15 +51,8 @@ void send_message_CLI(Messages *sms){
 void esperar_mensaje(Messages *sms){
     //Esperar a recibir un mensaje dirigido a este cliente
     receive_messages(sms, COORDINATOR, MESSAGE_TAG, NULL);
-    printf("Rank %d recibió de %d: %s\n",sms->receiver, sms->sender, sms->text);
+    printf("Rank %s recibió de %s: %s\n",get_username(sms->receiver), get_username(sms->sender), sms->text);
     //Mostrar el mensaje recibido al usuario
 }
 
-//void process_messages(int rank){
-    //Messag
-//}
-
-void protocol_run(){
-
-}
 

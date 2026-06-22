@@ -5,10 +5,12 @@ Documente este protocolo en el README y en los diagramas.
 #include "../include/wrapped_mpi.h"
 #include "../include/message.h"
 #include "../include/protocol.h"
+#include "../include/coordinator.h"
 
 #include <string.h>
 #include <stdio.h>
 
+//Caso de prueba generalizada y funcional
 void run_cli(int rank) {
     Messages sms;
 
@@ -48,7 +50,8 @@ void run_cli(int rank) {
             message_rand(sms.text, MAX_MESSAGE);
             break;
     }
-    printf("Rank %d enviando mensaje\n", rank);
+    printf("Rank %s enviando mensaje\n", get_username(rank));
+    //Adenlanta la salida/ print
     fflush(stdout);
     send_message_CLI(&sms);
     broadcast_general(&sms, COORDINATOR);
@@ -56,7 +59,7 @@ void run_cli(int rank) {
     if (sms.mode == BROADCAST) {
         for (int i = 0; i < sms.receiver_count; i++) {
             if (sms.receivers[i] == rank) {
-                printf("Rank %d recibió broadcast: %s\n",rank, sms.text);
+                printf("Rank %s recibió broadcast: %s\n",get_username(rank), sms.text);
                 break;
             }
         }
@@ -67,7 +70,4 @@ void run_cli(int rank) {
     }
 }
 
-//serialización de una estructura a un buffer de caracteres
-//char buffer[sizeof(Persona)];
-//memcpy(buffer, &p, sizeof(Persona));
 

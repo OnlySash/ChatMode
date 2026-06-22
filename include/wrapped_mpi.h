@@ -6,6 +6,10 @@
 #ifndef WRAPPED_MPI_H
 #define WRAPPED_MPI_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 void init_parallelization_mpi(int* argc, char*** argv, int* rank, int* size);
 void finalize_parallelization_mpi();
 
@@ -22,5 +26,8 @@ void receive_string(char *text, int length, int source, int tag);
 void send_messages(Messages *sms, int destination, int tag);
 void receive_messages(Messages *sms, int source, int tag, void* status);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif //WRAPPED_MPI_H

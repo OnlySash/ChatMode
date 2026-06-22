@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="utils/user.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/user.png</file>
+    <file alias="utils/background.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/background.png</file>
+    <file alias="utils/contacts.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/contacts.png</file>
+    <file alias="utils/difusion.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/difusion.png</file>
+    <file alias="utils/send.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/send.png</file>
+    <file alias="utils/back.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/back.png</file>
+    <file alias="utils/minis/mini_back.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/minis/mini_back.png</file>
+    <file alias="utils/minis/mini_contacts.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/minis/mini_contacts.png</file>
+    <file alias="utils/minis/mini_difusion.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/minis/mini_difusion.png</file>
+    <file alias="utils/minis/mini_send.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/minis/mini_send.png</file>
+    <file alias="utils/bubble_send.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/bubble_send.png</file>
+    <file alias="utils/bubble_send2.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/bubble_send2.png</file>
+    <file alias="utils/bubble_recv.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/bubble_recv.png</file>
+    <file alias="utils/bubble_recv2.png">/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/utils/bubble_recv2.png</file>
+  </qresource>
+</RCC>
+

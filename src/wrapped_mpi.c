@@ -6,6 +6,10 @@
 #include <string.h>
 
 //Todo lo referente a MPI
+/*cada cliente debe separar el hilo de la interfaz del hilo de
+comunicación (por ejemplo, con pthreads y MPI_Init_thread), 
+de manera que la GUI no se congele mientras se espera un mensaje.
+*/
 void init_parallelization_mpi(int* argc, char*** argv, int* rank, int* size)
 {
     int proveedor = 0;
@@ -74,7 +78,3 @@ void receive_messages(Messages *sms, int source, int tag, void* status)
     }
 }
 
-/*cada cliente debe separar el hilo de la interfaz del hilo de
-comunicación (por ejemplo, con pthreads y MPI_Init_thread), 
-de manera que la GUI no se congele mientras se espera un mensaje.
-*/

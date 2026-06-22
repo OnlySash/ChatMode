@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/cli.dir/cli_autogen/mocs_compilation.cpp.o CMakeFiles/cli.dir/home/sasha/Descargas/Practicas/ChatMode/ChatMode/cli/main.c.o -o cli  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib libcore.a /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 

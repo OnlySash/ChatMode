@@ -19,26 +19,26 @@ User users[] = {
     {4, "Wendy"}
 };
 
+const char *get_username(int rank) {
+    for (int i = 0; i < N_USERS; i++) {
+        if (users[i].rank == rank) {
+            return users[i].name;
+        }
+    }
+    return "No encontrado";
+}
 //Registrar los contactos como conectados
 void online(){
     // Avisa inicialmente que estan en lìnea
-    //char username[32];
-
     MPI_Status status;
     int sender;
 
     for (int i = 1; i <= N_USERS; i++) {
         receive_int(&sender, MPI_ANY_SOURCE, STATISTICS_TAG, &status);
         //receive_string(username, sizeof(username), sender, STATISTICS_TAG);
-        for(int j =0; j <N_USERS; j++){
-            if(users[j].rank == sender){
-                printf("[%s] En linea.\n", users[j].name);
-                break;
-            }
-        }
+        printf("[%s] En linea.\n", get_username(sender));
     }
     printf("[Coordinator] Sistema iniciado.\n");
-
 }
 
 //coordina envío y recibir mensajes
