@@ -1,13 +1,22 @@
 #ifndef PROTOCOL_H
 #define PROTOCOL_H
 
+#include "../include/utils.h"
+
 void contacto_en_linea(int rank);
 
 void tipo_mensaje();
 
 void escribir_mensaje();
 
-void esperar_mensaje();
+void send_message_CLI(Messages *sms);
 
+void message_rand(char *buf, int max_len);
+
+void esperar_mensaje(Messages *sms);
+
+void process_messages(int rank);
+
+void protocol_run();
 
 #endif //PROTOCOL_H

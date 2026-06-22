@@ -10,6 +10,4 @@ void tipo_mensaje();
 
 void escribir_mensaje();
 
-void esperar_mensaje();
-
 #endif //CLIENT_H

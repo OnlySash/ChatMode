@@ -39,8 +39,9 @@ void escribir_mensaje(){
 }
 
 void esperar_mensaje(){
-    //Esperar a recibir un mensaje dirigido a este cliente
-    //receive_string(char* text, int length, int source, int tag);
-
-    //Mostrar el mensaje recibido al usuario
+    // Esperar a recibir un mensaje dirigido a este cliente
+    // Esta implementación simple no recibe un buffer concreto.
+    char buffer[MAX_MESSAGE];
+    receive_string(buffer, sizeof(buffer), MPI_ANY_SOURCE, MESSAGE_TAG);
+    printf("Mensaje recibido: %s\n", buffer);
 }

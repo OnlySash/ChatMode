@@ -7,9 +7,11 @@ y reciben los mensajes dirigidos a ellos.
 #include "../include/message.h"
 #include "../include/coordinator.h"
 #include "../include/client.h"
+#include "../include/utils.h"
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 //Tabla de usernames
 static const char* usernames[] = {
@@ -32,22 +34,36 @@ void tipo_mensaje(){
 void escribir_mensaje(){
     //Que el usuario escriba un mensaje
     //Limitar la longitud del mensaje a MAX_MESSAGE 50
-    printf("Escribe tu mensaje (máximo %d caracteres): ", MAX_MESSAGE);
+    printf("Escribe un mensaje (máximo %d caracteres): ", MAX_MESSAGE);
     char mensaje[MAX_MESSAGE];
     if (fgets(mensaje, MAX_MESSAGE, stdin) == NULL) {
         printf("Error al leer mensaje\n");
     }
 }
 
-void mensaje_rand(){
-    
+void message_rand(char *buf, int max_len){
+    int length = 3 + rand() % (max_len - 3);
+    for (int i = 0; i < length; i++) {
+        buf[i] = 'a' + (rand() % 26);
+    }
+    buf[length] = '\0';
 }
 
-void esperar_mensaje(char* text, int length, int source, int tag){
+void send_message_CLI(Messages *sms){
+    message_rand(sms->text, MAX_MESSAGE);
+
+    send_string(sms->text, COORDINATOR, MESSAGE_TAG);
+}
+
+void esperar_mensaje(Messages *sms){
     //Esperar a recibir un mensaje dirigido a este cliente
-    receive_string(text, length, source, tag);
+    receive_string(sms->text, sizeof(sms->text),sms->sender, MESSAGE_TAG);
     printf("Esperando mensaje, espera activa");
     //Mostrar el mensaje recibido al usuario
+}
+
+void process_messages(int rank){
+    //Messag
 }
 
 void protocol_run(){

@@ -5,42 +5,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-#include "include/message.h"
-#include "include/client.h"
-#include "include/coordinator.h"
 #include "include/wrapped_mpi.h"
-
-void menu(){
-    printf("Selecciona una opcion: \n1. Abrir UI\n2. Usar terminal automatico\n3. Uar terminal manual\n");
-    int opcion;
-    if (scanf("%d", &opcion) != 1) {
-        printf("Error al leer entrada\n");
-        return;
-    }
-    getchar();
-
-    switch (opcion) {
-        case 1:
-            // Abrir UI
-            break;
-        case 2:
-            // Usar terminal automático
-            coordinator_run();
-            {
-                int n_users = N_USERS;
-                broadcast_numbers_processors(&n_users, COORDINATOR);
-            }
-            break;
-        case 3:
-            // Usar terminal manual
-            break;
-        default:
-            printf("Opción no válida\n");
-            break;
-    }
-}
-
+#include "include/client.h"
+#include "include/runner.h"
 
 int main(int argc, char *argv[]) {
     int rank, size;
@@ -48,7 +15,7 @@ int main(int argc, char *argv[]) {
     init_parallelization_mpi(&argc, &argv, &rank, &size);
 
     if (rank == 0) {
-        menu();
+        menu(rank);
     } else {
         contacto_en_linea(rank);
     }

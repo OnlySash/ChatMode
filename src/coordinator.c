@@ -8,6 +8,7 @@ También puede registrar bitácoras y métricas globales.*/
 #include "../include/coordinator.h"
 #include "../include/wrapped_mpi.h"
 #include "../include/message.h"
+#include "../include/utils.h"
 
 //Tabla de usernames
 User users[] = {
@@ -36,11 +37,11 @@ void process_request(Messages* sms, Coordinator* state){
         send_string(sms->text, sms->receiver, MESSAGE_TAG);
     } else if (sms->mode == BROADCAST) {
         // Enviar mensaje de difusión a todos
-        broadcast_general(sms);
+        broadcast_general(sms, COORDINATOR);
     } else {
         // Encolar si no hay capacidad
         if (state->rear < 100) {
-            state->pending_queue[state->rear++] = sms->send_rank;
+            state->pending_queue[state->rear++] = sms->sender;
         }
     }
 }
