@@ -12,17 +12,13 @@ y reciben los mensajes dirigidos a ellos.
 #include <string.h>
 #include <stdlib.h>
 
-//Tabla de usernames
-static const char* usernames[] = {
-    "Sasha", "Karina", "Amber", "Wendy"
-};
-
-void contacto_en_linea(int rank){
+void contact_online(int rank){
     if (rank < 1 || rank > N_USERS) {
         printf("Rank %d no es un cliente válido\n", rank);
         return;
     }
-    send_string((char*) usernames[rank - 1], COORDINATOR, STATISTICS_TAG);
+    send_int(rank, COORDINATOR,STATISTICS_TAG);
+    //send_string((char*) usernames[rank - 1], COORDINATOR, STATISTICS_TAG);
 }
 
 
@@ -35,11 +31,15 @@ void escribir_mensaje(){
     //Limitar la longitud del mensaje a MAX_MESSAGE 50
     printf("Escribe un mensaje (máximo %d caracteres): ", MAX_MESSAGE);
     char mensaje[MAX_MESSAGE];
-    if (fgets(mensaje, MAX_MESSAGE, stdin) == NULL) {
+
+    char *eltexto = fgets(mensaje, MAX_MESSAGE, stdin);
+
+    if (eltexto == NULL) {
         printf("Error al leer mensaje\n");
     }
 }
 
+//Para pruebas
 void message_rand(char *buf, int max_len){
     int length = 3 + rand() % (max_len - 3);
     for (int i = 0; i < length; i++) {
@@ -49,15 +49,13 @@ void message_rand(char *buf, int max_len){
 }
 
 void send_message_CLI(Messages *sms){
-    message_rand(sms->text, MAX_MESSAGE);
-
     send_messages(sms, COORDINATOR, MESSAGE_TAG);
 }
 
 void esperar_mensaje(Messages *sms){
     //Esperar a recibir un mensaje dirigido a este cliente
-    receive_string(sms->text, sizeof(sms->text),sms->sender, MESSAGE_TAG);
-    printf("Esperando mensaje, espera activa");
+    receive_messages(sms, COORDINATOR, MESSAGE_TAG, NULL);
+    printf("Rank %d recibió de %d: %s\n",sms->receiver, sms->sender, sms->text);
     //Mostrar el mensaje recibido al usuario
 }
 

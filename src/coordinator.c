@@ -19,15 +19,25 @@ User users[] = {
     {4, "Wendy"}
 };
 
-
-void en_linea(){
+//Registrar los contactos como conectados
+void online(){
     // Avisa inicialmente que estan en lìnea
-    char username[32];
+    //char username[32];
+
+    MPI_Status status;
+    int sender;
+
     for (int i = 1; i <= N_USERS; i++) {
-        receive_string(username, sizeof(username), i, STATISTICS_TAG);
-        printf("[%s] En linea.\n", username);
+        receive_int(&sender, MPI_ANY_SOURCE, STATISTICS_TAG, &status);
+        //receive_string(username, sizeof(username), sender, STATISTICS_TAG);
+        for(int j =0; j <N_USERS; j++){
+            if(users[j].rank == sender){
+                printf("[%s] En linea.\n", users[j].name);
+                break;
+            }
+        }
     }
-    printf("[Coordinator] Sistema iniciado.");
+    printf("[Coordinator] Sistema iniciado.\n");
 
 }
 
@@ -40,7 +50,7 @@ void process_request(Messages* sms, Coordinator* state){
         // Enviar mensaje de difusión a todos
         broadcast_general(sms, COORDINATOR);
     } else {
-        // Encolar si no hay capacidad
+        // Enviar a cola si no hay campo
         if (state->rear < 100) {
             state->pending_queue[state->rear++] = sms->sender;
         }
@@ -50,8 +60,9 @@ void process_request(Messages* sms, Coordinator* state){
 void metricas(){
 }
 void coordinator_run(){
-    en_linea();
-    // Procesar mensajes entrantes de los clientes
+    online();
+    sync_processors();
+    // Procesar mensajes entrantes de los contactos
     Coordinator state = {0};
     for (int i = 0; i < N_USERS; i++) {
         Messages sms;
@@ -59,5 +70,4 @@ void coordinator_run(){
         receive_messages(&sms, MPI_ANY_SOURCE, MESSAGE_TAG, &status);
         process_request(&sms, &state);
     }
-    sync_processors();
 }

@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 
+//Todo lo referente a MPI
 void init_parallelization_mpi(int* argc, char*** argv, int* rank, int* size)
 {
     int proveedor = 0;

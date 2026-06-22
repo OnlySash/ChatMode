@@ -5,21 +5,24 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "include/wrapped_mpi.h"
-#include "include/message.h"
-#include "include/coordinator.h"
-#include "include/client.h"
-#include "include/protocol.h"
+#include <time.h>
+#include "../include/wrapped_mpi.h"
+#include "../include/message.h"
+#include "../include/coordinator.h"
+#include "../include/protocol.h"
 
 int main(int argc, char *argv[]) {
     int rank, size;
     // Inicializar MPI
     init_parallelization_mpi(&argc, &argv, &rank, &size);
 
+    srand(time(NULL)+rank);
+
     if(rank == COORDINATOR){
         coordinator_run();
     }else{
-        contacto_en_linea(rank);
+        contact_online(rank);
+        sync_processors();
         run_cli(rank);
     }
 

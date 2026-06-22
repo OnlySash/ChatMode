@@ -6,11 +6,10 @@ LDLIBS ?=
 
 TARGET := main
 SRC := main.c \
-       src/wrapped_mpi.c \
-       src/coordinator.c \
-       src/client.c \
-	   src/protocol.c \
-       src/message.c
+       ../src/wrapped_mpi.c \
+       ../src/coordinator.c \
+	   ../src/protocol.c \
+       ../src/message.c
 
 BUILD_DIR := build
 OBJ := $(SRC:%.c=$(BUILD_DIR)/%.o)

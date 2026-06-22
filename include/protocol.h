@@ -3,7 +3,7 @@
 
 #include "../include/utils.h"
 
-void contacto_en_linea(int rank);
+void contact_online(int rank);
 
 void tipo_mensaje();
 
