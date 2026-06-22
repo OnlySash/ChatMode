@@ -6,18 +6,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "include/wrapped_mpi.h"
+#include "include/message.h"
+#include "include/coordinator.h"
 #include "include/client.h"
-#include "include/runner.h"
+#include "include/protocol.h"
 
 int main(int argc, char *argv[]) {
     int rank, size;
     // Inicializar MPI
     init_parallelization_mpi(&argc, &argv, &rank, &size);
 
-    if (rank == 0) {
-        menu(rank);
-    } else {
+    if(rank == COORDINATOR){
+        coordinator_run();
+    }else{
         contacto_en_linea(rank);
+        run_cli(rank);
     }
 
     // Finalizar MPI

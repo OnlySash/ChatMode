@@ -7,7 +7,8 @@
 
 void init_parallelization_mpi(int* argc, char*** argv, int* rank, int* size)
 {
-    MPI_Init_thread(argc, argv);
+    int proveedor = 0;
+    MPI_Init_thread(argc, argv, MPI_THREAD_MULTIPLE, &proveedor);
     MPI_Comm_rank(MPI_COMM_WORLD, rank);
     MPI_Comm_size(MPI_COMM_WORLD, size);
 }
@@ -37,9 +38,14 @@ void send_int(int value, int destination, int tag)
     MPI_Send(&value, 1, MPI_INT, destination, tag, MPI_COMM_WORLD);
 }
 
-void receive_int(int* value, int source, int tag, MPI_Status* status)
+void receive_int(int* value, int source, int tag, void* status)
 {
-    MPI_Recv(value, 1, MPI_INT, source, tag, MPI_COMM_WORLD, status);
+    MPI_Status *st = (MPI_Status*) status;
+    if (st == NULL) {
+        MPI_Recv(value, 1, MPI_INT, source, tag, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+    } else {
+        MPI_Recv(value, 1, MPI_INT, source, tag, MPI_COMM_WORLD, st);
+    }
 }
 
 void send_string(char *text, int destination, int tag)
@@ -50,6 +56,21 @@ void send_string(char *text, int destination, int tag)
 void receive_string(char *text, int length, int source, int tag)
 {
     MPI_Recv(text, length, MPI_CHAR, source, tag, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+}
+
+void send_messages(Messages *sms, int destination, int tag)
+{
+    MPI_Send(sms, sizeof(Messages), MPI_BYTE, destination, tag, MPI_COMM_WORLD);
+}
+
+void receive_messages(Messages *sms, int source, int tag, void* status)
+{
+    MPI_Status *st = (MPI_Status*) status;
+    if (st == NULL) {
+        MPI_Recv(sms, sizeof(Messages), MPI_BYTE, source, tag, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+    } else {
+        MPI_Recv(sms, sizeof(Messages), MPI_BYTE, source, tag, MPI_COMM_WORLD, st);
+    }
 }
 
 /*cada cliente debe separar el hilo de la interfaz del hilo de

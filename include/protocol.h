@@ -15,7 +15,7 @@ void message_rand(char *buf, int max_len);
 
 void esperar_mensaje(Messages *sms);
 
-void process_messages(int rank);
+//void process_messages(int rank);
 
 void protocol_run();
 

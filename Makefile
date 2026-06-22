@@ -9,7 +9,6 @@ SRC := main.c \
        src/wrapped_mpi.c \
        src/coordinator.c \
        src/client.c \
-	   src/runner.c \
 	   src/protocol.c \
        src/message.c
 

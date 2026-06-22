@@ -4,6 +4,7 @@ administra las listas de difusión y enruta cada mensaje hacia su destino.
 También puede registrar bitácoras y métricas globales.*/
 #include <stdio.h>
 #include <string.h>
+#include <mpi.h>
 
 #include "../include/coordinator.h"
 #include "../include/wrapped_mpi.h"
@@ -34,7 +35,7 @@ void en_linea(){
 void process_request(Messages* sms, Coordinator* state){
     if (sms->mode == DIRECT) {
         // Enviar mensaje directo al destinatario
-        send_string(sms->text, sms->receiver, MESSAGE_TAG);
+        send_messages(sms, sms->receiver, MESSAGE_TAG);
     } else if (sms->mode == BROADCAST) {
         // Enviar mensaje de difusión a todos
         broadcast_general(sms, COORDINATOR);
@@ -50,4 +51,13 @@ void metricas(){
 }
 void coordinator_run(){
     en_linea();
+    // Procesar mensajes entrantes de los clientes
+    Coordinator state = {0};
+    for (int i = 0; i < N_USERS; i++) {
+        Messages sms;
+        MPI_Status status;
+        receive_messages(&sms, MPI_ANY_SOURCE, MESSAGE_TAG, &status);
+        process_request(&sms, &state);
+    }
+    sync_processors();
 }

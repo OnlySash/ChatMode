@@ -6,7 +6,6 @@ y reciben los mensajes dirigidos a ellos.
 #include "../include/wrapped_mpi.h"
 #include "../include/message.h"
 #include "../include/coordinator.h"
-#include "../include/client.h"
 #include "../include/utils.h"
 
 #include <stdio.h>
@@ -52,7 +51,7 @@ void message_rand(char *buf, int max_len){
 void send_message_CLI(Messages *sms){
     message_rand(sms->text, MAX_MESSAGE);
 
-    send_string(sms->text, COORDINATOR, MESSAGE_TAG);
+    send_messages(sms, COORDINATOR, MESSAGE_TAG);
 }
 
 void esperar_mensaje(Messages *sms){
@@ -62,9 +61,9 @@ void esperar_mensaje(Messages *sms){
     //Mostrar el mensaje recibido al usuario
 }
 
-void process_messages(int rank){
+//void process_messages(int rank){
     //Messag
-}
+//}
 
 void protocol_run(){
 

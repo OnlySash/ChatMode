@@ -1,5 +1,4 @@
 #include <stddef.h>
-#include <mpi.h>
 
 #include "message.h"
 #include "utils.h"
@@ -15,9 +14,13 @@ void broadcast_general(Messages *sms, int source);
 void sync_processors(void);
 
 void send_int(int value, int destination, int tag);
-void receive_int(int* value, int source, int tag, MPI_Status* status);
+void receive_int(int* value, int source, int tag, void* status);
 void send_string(char *text, int destination, int tag);
 void receive_string(char *text, int length, int source, int tag);
+
+// Send/receive full Messages structures
+void send_messages(Messages *sms, int destination, int tag);
+void receive_messages(Messages *sms, int source, int tag, void* status);
 
 
 #endif //WRAPPED_MPI_H
