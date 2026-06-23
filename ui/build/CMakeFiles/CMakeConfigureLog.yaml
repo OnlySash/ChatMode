@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-QrDtuV"
-      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-QrDtuV"
+      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-PkEoI3"
+      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-PkEoI3"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-QrDtuV'
+        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-PkEoI3'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_72d8f/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_72d8f.dir/build.make CMakeFiles/cmTC_72d8f.dir/build
-        gmake[1]: Entering directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-QrDtuV'
-        Building C object CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0bc6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f0bc6.dir/build.make CMakeFiles/cmTC_f0bc6.dir/build
+        gmake[1]: Entering directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-PkEoI3'
+        Building C object CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -87,8 +87,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72d8f.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_72d8f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccJOauqw.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0bc6.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f0bc6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccEdhOOa.s
         GNU C17 (Ubuntu 14.2.0-4ubuntu2~24.04.1) version 14.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -105,15 +105,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 99fb15649116b4322941a9e67bb5fcf5
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72d8f.dir/'
-         as -v --64 -o CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o /tmp/ccJOauqw.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0bc6.dir/'
+         as -v --64 -o CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o /tmp/ccEdhOOa.s
         GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_72d8f
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72d8f.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o -o cmTC_72d8f 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f0bc6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0bc6.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o -o cmTC_f0bc6 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper
@@ -126,10 +126,10 @@ events:
         gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_72d8f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_72d8f.'
-         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZkwxFT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_72d8f /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_72d8f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_72d8f.'
-        gmake[1]: Leaving directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-QrDtuV'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0bc6' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f0bc6.'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPgfljl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f0bc6 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0bc6' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f0bc6.'
+        gmake[1]: Leaving directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-PkEoI3'
         
       exitCode: 0
   -
@@ -163,13 +163,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-QrDtuV']
+        ignore line: [Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-PkEoI3']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_72d8f/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_72d8f.dir/build.make CMakeFiles/cmTC_72d8f.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-QrDtuV']
-        ignore line: [Building C object CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0bc6/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f0bc6.dir/build.make CMakeFiles/cmTC_f0bc6.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-PkEoI3']
+        ignore line: [Building C object CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -179,8 +179,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72d8f.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_72d8f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccJOauqw.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0bc6.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f0bc6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccEdhOOa.s]
         ignore line: [GNU C17 (Ubuntu 14.2.0-4ubuntu2~24.04.1) version 14.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -197,15 +197,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 99fb15649116b4322941a9e67bb5fcf5]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72d8f.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o /tmp/ccJOauqw.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0bc6.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o /tmp/ccEdhOOa.s]
         ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_72d8f]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72d8f.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o -o cmTC_72d8f ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f0bc6]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0bc6.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o -o cmTC_f0bc6 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper]
@@ -218,13 +218,13 @@ events:
         ignore line: [gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_72d8f' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_72d8f.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZkwxFT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_72d8f /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0bc6' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f0bc6.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPgfljl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f0bc6 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/14/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccZkwxFT.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccPgfljl.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -242,7 +242,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_72d8f] ==> ignore
+          arg [cmTC_f0bc6] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
@@ -254,7 +254,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..]
-          arg [CMakeFiles/cmTC_72d8f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_f0bc6.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -294,8 +294,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-fQ5xqC"
-      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-fQ5xqC"
+      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-AhsGs5"
+      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-AhsGs5"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -304,13 +304,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-fQ5xqC'
+        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-AhsGs5'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2f9de/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_2f9de.dir/build.make CMakeFiles/cmTC_2f9de.dir/build
-        gmake[1]: Entering directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-fQ5xqC'
-        Building CXX object CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c7119/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c7119.dir/build.make CMakeFiles/cmTC_c7119.dir/build
+        gmake[1]: Entering directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-AhsGs5'
+        Building CXX object CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -320,8 +320,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2f9de.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2f9de.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccgeYBg0.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c7119.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c7119.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccIDawNW.s
         GNU C++17 (Ubuntu 14.2.0-4ubuntu2~24.04.1) version 14.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -342,15 +342,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 5499d5209675a49f4b2d429e1c1e5405
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2f9de.dir/'
-         as -v --64 -o CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccgeYBg0.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c7119.dir/'
+         as -v --64 -o CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIDawNW.s
         GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_2f9de
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f9de.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2f9de 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_c7119
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7119.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c7119 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper
@@ -363,10 +363,10 @@ events:
         gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2f9de' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2f9de.'
-         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfYuyL9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2f9de /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2f9de' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2f9de.'
-        gmake[1]: Leaving directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-fQ5xqC'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c7119' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c7119.'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxtJwNO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c7119 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c7119' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c7119.'
+        gmake[1]: Leaving directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-AhsGs5'
         
       exitCode: 0
   -
@@ -406,13 +406,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-fQ5xqC']
+        ignore line: [Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-AhsGs5']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2f9de/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2f9de.dir/build.make CMakeFiles/cmTC_2f9de.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-fQ5xqC']
-        ignore line: [Building CXX object CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c7119/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c7119.dir/build.make CMakeFiles/cmTC_c7119.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-AhsGs5']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -422,8 +422,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2f9de.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2f9de.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccgeYBg0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c7119.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c7119.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccIDawNW.s]
         ignore line: [GNU C++17 (Ubuntu 14.2.0-4ubuntu2~24.04.1) version 14.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -444,15 +444,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 5499d5209675a49f4b2d429e1c1e5405]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2f9de.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccgeYBg0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c7119.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIDawNW.s]
         ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_2f9de]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f9de.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2f9de ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_c7119]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7119.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c7119 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper]
@@ -465,13 +465,13 @@ events:
         ignore line: [gcc version 14.2.0 (Ubuntu 14.2.0-4ubuntu2~24.04.1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2f9de' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2f9de.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfYuyL9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2f9de /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c7119' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c7119.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxtJwNO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c7119 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/14/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccfYuyL9.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccxtJwNO.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -489,7 +489,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_2f9de] ==> ignore
+          arg [cmTC_c7119] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
@@ -501,7 +501,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..]
-          arg [CMakeFiles/cmTC_2f9de.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_c7119.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -543,8 +543,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-0W18Dd"
-      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-0W18Dd"
+      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-68WbQZ"
+      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-68WbQZ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -554,17 +554,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-0W18Dd'
+        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-68WbQZ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04671/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_04671.dir/build.make CMakeFiles/cmTC_04671.dir/build
-        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-0W18Dd'
-        Building C object CMakeFiles/cmTC_04671.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_04671.dir/src.c.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-0W18Dd/src.c
-        Linking C executable cmTC_04671
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04671.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_04671.dir/src.c.o -o cmTC_04671 
-        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-0W18Dd'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_efb09/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_efb09.dir/build.make CMakeFiles/cmTC_efb09.dir/build
+        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-68WbQZ'
+        Building C object CMakeFiles/cmTC_efb09.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_efb09.dir/src.c.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-68WbQZ/src.c
+        Linking C executable cmTC_efb09
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efb09.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_efb09.dir/src.c.o -o cmTC_efb09 
+        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-68WbQZ'
         
       exitCode: 0
   -
@@ -586,8 +586,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-IL653f"
-      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-IL653f"
+      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-N5v2xJ"
+      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-N5v2xJ"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -597,17 +597,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-IL653f'
+        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-N5v2xJ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6b0c4/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_6b0c4.dir/build.make CMakeFiles/cmTC_6b0c4.dir/build
-        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-IL653f'
-        Building CXX object CMakeFiles/cmTC_6b0c4.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_STDATOMIC   -o CMakeFiles/cmTC_6b0c4.dir/src.cxx.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-IL653f/src.cxx
-        Linking CXX executable cmTC_6b0c4
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b0c4.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_6b0c4.dir/src.cxx.o -o cmTC_6b0c4 
-        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-IL653f'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_69e30/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_69e30.dir/build.make CMakeFiles/cmTC_69e30.dir/build
+        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-N5v2xJ'
+        Building CXX object CMakeFiles/cmTC_69e30.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_STDATOMIC   -o CMakeFiles/cmTC_69e30.dir/src.cxx.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-N5v2xJ/src.cxx
+        Linking CXX executable cmTC_69e30
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69e30.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_69e30.dir/src.cxx.o -o cmTC_69e30 
+        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-N5v2xJ'
         
       exitCode: 0
   -
@@ -619,8 +619,8 @@ events:
       - "CMakeLists.txt:10 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9JhAWd"
-      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9JhAWd"
+      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-Og2m1r"
+      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-Og2m1r"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -630,17 +630,17 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9JhAWd'
+        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-Og2m1r'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_02f9a/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_02f9a.dir/build.make CMakeFiles/cmTC_02f9a.dir/build
-        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9JhAWd'
-        Building C object CMakeFiles/cmTC_02f9a.dir/test_mpi.c.o
-        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_02f9a.dir/test_mpi.c.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9JhAWd/test_mpi.c
-        Linking C executable cmTC_02f9a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02f9a.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_02f9a.dir/test_mpi.c.o -o cmTC_02f9a  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
-        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9JhAWd'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6161f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6161f.dir/build.make CMakeFiles/cmTC_6161f.dir/build
+        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-Og2m1r'
+        Building C object CMakeFiles/cmTC_6161f.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_6161f.dir/test_mpi.c.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-Og2m1r/test_mpi.c
+        Linking C executable cmTC_6161f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6161f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_6161f.dir/test_mpi.c.o -o cmTC_6161f  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
+        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-Og2m1r'
         
       exitCode: 0
   -
@@ -652,8 +652,8 @@ events:
       - "CMakeLists.txt:10 (find_package)"
     description: "The MPI test test_mpi for CXX in mode normal"
     directories:
-      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9wcLR7"
-      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9wcLR7"
+      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-M58pyf"
+      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-M58pyf"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -663,17 +663,17 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9wcLR7'
+        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-M58pyf'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d32c0/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_d32c0.dir/build.make CMakeFiles/cmTC_d32c0.dir/build
-        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9wcLR7'
-        Building CXX object CMakeFiles/cmTC_d32c0.dir/test_mpi.cpp.o
-        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_d32c0.dir/test_mpi.cpp.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9wcLR7/test_mpi.cpp
-        Linking CXX executable cmTC_d32c0
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d32c0.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_d32c0.dir/test_mpi.cpp.o -o cmTC_d32c0  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
-        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-9wcLR7'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bc651/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bc651.dir/build.make CMakeFiles/cmTC_bc651.dir/build
+        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-M58pyf'
+        Building CXX object CMakeFiles/cmTC_bc651.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_bc651.dir/test_mpi.cpp.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-M58pyf/test_mpi.cpp
+        Linking CXX executable cmTC_bc651
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc651.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_bc651.dir/test_mpi.cpp.o -o cmTC_bc651  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
+        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-M58pyf'
         
       exitCode: 0
   -
@@ -684,8 +684,8 @@ events:
       - "CMakeLists.txt:10 (find_package)"
     description: "The MPI test test_mpi for CXX in mode MPICXX"
     directories:
-      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2XPzVE"
-      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2XPzVE"
+      source: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2sxyHZ"
+      binary: "/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2sxyHZ"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -695,17 +695,17 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
       cached: true
       stdout: |
-        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2XPzVE'
+        Change Dir: '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2sxyHZ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_67a97/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_67a97.dir/build.make CMakeFiles/cmTC_67a97.dir/build
-        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2XPzVE'
-        Building CXX object CMakeFiles/cmTC_67a97.dir/test_mpi.cpp.o
-        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_67a97.dir/test_mpi.cpp.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2XPzVE/test_mpi.cpp
-        Linking CXX executable cmTC_67a97
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67a97.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_67a97.dir/test_mpi.cpp.o -o cmTC_67a97  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
-        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2XPzVE'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cdc5d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cdc5d.dir/build.make CMakeFiles/cmTC_cdc5d.dir/build
+        gmake[1]: se entra en el directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2sxyHZ'
+        Building CXX object CMakeFiles/cmTC_cdc5d.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_cdc5d.dir/test_mpi.cpp.o -c /home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2sxyHZ/test_mpi.cpp
+        Linking CXX executable cmTC_cdc5d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdc5d.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_cdc5d.dir/test_mpi.cpp.o -o cmTC_cdc5d  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
+        gmake[1]: se sale del directorio '/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles/CMakeScratch/TryCompile-2sxyHZ'
         
       exitCode: 0
 ...

@@ -90,8 +90,8 @@ clean: CMakeFiles/ChatMode_autogen.dir/clean
 # Target rules for target CMakeFiles/core.dir
 
 # All Build rule for target.
-CMakeFiles/core.dir/all: CMakeFiles/core_autogen_timestamp_deps.dir/all
 CMakeFiles/core.dir/all: CMakeFiles/core_autogen.dir/all
+CMakeFiles/core.dir/all: CMakeFiles/core_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles --progress-num=14,15,16,17,18,19,20 "Built target core"
@@ -117,9 +117,9 @@ CMakeFiles/core.dir/clean:
 # Target rules for target CMakeFiles/cli.dir
 
 # All Build rule for target.
-CMakeFiles/cli.dir/all: CMakeFiles/core.dir/all
 CMakeFiles/cli.dir/all: CMakeFiles/cli_autogen_timestamp_deps.dir/all
 CMakeFiles/cli.dir/all: CMakeFiles/cli_autogen.dir/all
+CMakeFiles/cli.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli.dir/build.make CMakeFiles/cli.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles --progress-num=9,10,11,12 "Built target cli"
@@ -145,9 +145,9 @@ CMakeFiles/cli.dir/clean:
 # Target rules for target CMakeFiles/ChatMode.dir
 
 # All Build rule for target.
-CMakeFiles/ChatMode.dir/all: CMakeFiles/ChatMode_autogen.dir/all
-CMakeFiles/ChatMode.dir/all: CMakeFiles/core.dir/all
 CMakeFiles/ChatMode.dir/all: CMakeFiles/ChatMode_autogen_timestamp_deps.dir/all
+CMakeFiles/ChatMode.dir/all: CMakeFiles/core.dir/all
+CMakeFiles/ChatMode.dir/all: CMakeFiles/ChatMode_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatMode.dir/build.make CMakeFiles/ChatMode.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ChatMode.dir/build.make CMakeFiles/ChatMode.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sasha/Descargas/Practicas/ChatMode/ChatMode/ui/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ChatMode"

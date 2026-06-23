@@ -24,20 +24,20 @@ MainWindow::MainWindow(int mi_rank, QWidget *parent)
     m_pila = new QStackedWidget(this);
     setCentralWidget(m_pila);
 
-    construir_lista_chats();
-    construir_vista_chat();
-    construir_difusion();
+    lista_chats();
+    vista_chat();
+    config_difusion();
 
     m_pila->addWidget(m_pagina_lista);
     m_pila->addWidget(m_pagina_chat);
     m_pila->addWidget(m_pagina_difusion);
     m_pila->setCurrentWidget(m_pagina_lista);
 
-    configurar_estilos();
+    config_estilos();
 
     m_receptor = new Receptor_MPI(this);
     connect(m_receptor, &Receptor_MPI::mensaje_recibido,
-            this, &MainWindow::mostrar_mensaje_recibido);
+            this, &MainWindow::ver_mensaje_recibido);
     m_receptor->start();
 }
 
@@ -46,7 +46,7 @@ MainWindow::~MainWindow() {
     m_receptor->wait();
 }
 
-void MainWindow::configurar_estilos() {
+void MainWindow::config_estilos() {
     setStyleSheet(QString(R"(
         QMainWindow, QWidget {
             background-color: %1;
@@ -92,7 +92,7 @@ void MainWindow::configurar_estilos() {
     )").arg(COLOR_FONDO, COLOR_TEXTO, COLOR_PANEL, COLOR_ACENTO));
 }
 
-void MainWindow::construir_lista_chats() {
+void MainWindow::lista_chats() {
     m_pagina_lista = new QWidget;
     auto *disposicion = new QVBoxLayout(m_pagina_lista);
     disposicion->setContentsMargins(0, 0, 0, 0);
@@ -160,7 +160,7 @@ void MainWindow::construir_lista_chats() {
     disposicion->addWidget(barra_botones);
 }
 
-void MainWindow::construir_vista_chat() {
+void MainWindow::vista_chat() {
     m_pagina_chat = new QWidget;
     auto *disposicion = new QVBoxLayout(m_pagina_chat);
     disposicion->setContentsMargins(0, 0, 0, 0);
@@ -220,7 +220,7 @@ void MainWindow::construir_vista_chat() {
     disposicion->addWidget(barra_entrada);
 }
 
-void MainWindow::construir_difusion() {
+void MainWindow::config_difusion() {
     m_pagina_difusion = new QWidget;
     auto *disposicion = new QVBoxLayout(m_pagina_difusion);
     disposicion->setContentsMargins(0, 0, 0, 0);
@@ -299,7 +299,6 @@ void MainWindow::construir_difusion() {
     disposicion->addWidget(barra_entrada);
 }
 
-// ── Slots ─────────────────────────────────────────────────────────
 void MainWindow::abrir_chat(int indice) {
     m_usuario_actual = indice;
     int rank = m_usuarios[indice].rank;
@@ -383,7 +382,7 @@ void MainWindow::retroceder() {
     m_pila->setCurrentWidget(m_pagina_lista);
 }
 
-void MainWindow::mostrar_mensaje_recibido(int remitente, QString texto) {
+void MainWindow::ver_mensaje_recibido(int remitente, QString texto) {
     QString nombre = "Desconocido";
     if (m_rank_a_indice.contains(remitente))
         nombre = QString::fromUtf8(m_usuarios[m_rank_a_indice[remitente]].name);

@@ -33,14 +33,14 @@ private slots:
     void enviar_directo();
     void enviar_difusion();
     void retroceder();
-    void mostrar_mensaje_recibido(int remitente, QString texto);
+    void ver_mensaje_recibido(int remitente, QString texto);
 
 private:
-    void configurar_estilos();
-    void construir_lista_chats();
-    void construir_vista_chat();
-    void construir_difusion();
-    void agregar_mensaje_recibido(const QString &remitente, const QString &texto);
+    void config_estilos();
+    void lista_chats();
+    void vista_chat();
+    void config_difusion();
+    void agregar_recibido(const QString &remitente, const QString &texto);
 
     int m_mi_rank;
     QStackedWidget *m_pila;

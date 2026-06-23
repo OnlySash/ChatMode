@@ -35,7 +35,7 @@ struct qt_meta_stringdata_MainWindow_t {
     char stringdata4[15];
     char stringdata5[16];
     char stringdata6[11];
-    char stringdata7[25];
+    char stringdata7[21];
     char stringdata8[10];
     char stringdata9[6];
 };
@@ -50,9 +50,9 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
         QT_MOC_LITERAL(38, 14),  // "enviar_directo"
         QT_MOC_LITERAL(53, 15),  // "enviar_difusion"
         QT_MOC_LITERAL(69, 10),  // "retroceder"
-        QT_MOC_LITERAL(80, 24),  // "mostrar_mensaje_recibido"
-        QT_MOC_LITERAL(105, 9),  // "remitente"
-        QT_MOC_LITERAL(115, 5)   // "texto"
+        QT_MOC_LITERAL(80, 20),  // "ver_mensaje_recibido"
+        QT_MOC_LITERAL(101, 9),  // "remitente"
+        QT_MOC_LITERAL(111, 5)   // "texto"
     },
     "MainWindow",
     "abrir_chat",
@@ -61,7 +61,7 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
     "enviar_directo",
     "enviar_difusion",
     "retroceder",
-    "mostrar_mensaje_recibido",
+    "ver_mensaje_recibido",
     "remitente",
     "texto"
 };
@@ -116,7 +116,7 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'retroceder'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'mostrar_mensaje_recibido'
+        // method 'ver_mensaje_recibido'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>
@@ -134,7 +134,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->enviar_directo(); break;
         case 2: _t->enviar_difusion(); break;
         case 3: _t->retroceder(); break;
-        case 4: _t->mostrar_mensaje_recibido((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 4: _t->ver_mensaje_recibido((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     }

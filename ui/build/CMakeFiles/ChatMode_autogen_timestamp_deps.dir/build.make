@@ -67,10 +67,10 @@ include CMakeFiles/ChatMode_autogen_timestamp_deps.dir/compiler_depend.make
 include CMakeFiles/ChatMode_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/ChatMode_autogen_timestamp_deps: libcore.a
-CMakeFiles/ChatMode_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
-CMakeFiles/ChatMode_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 CMakeFiles/ChatMode_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
+CMakeFiles/ChatMode_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/ChatMode_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/ChatMode_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 
 ChatMode_autogen_timestamp_deps: CMakeFiles/ChatMode_autogen_timestamp_deps
 ChatMode_autogen_timestamp_deps: CMakeFiles/ChatMode_autogen_timestamp_deps.dir/build.make
