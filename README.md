@@ -27,20 +27,6 @@ Limpiar archivos compilados:
 make clean
 ```
 
-## Ejecución
-
-Los ejecutables se generan en la carpeta build.
-
-Parámetros:
-
-
-
-Ejemplos:
-
-```sh
-
-```
-
 ## Ejecutar
 
 ```sh
@@ -60,33 +46,27 @@ Compilar todo:
 
 ```sh
 cmake ..
-
+cmake --build . --target clean
 ```
 
 Limpiar archivos compilados:
 
 ```sh
-cmake clean
+cd .. && rm -rf build && mkdir build && cd build 
 ```
 
-## Ejecución
+## Ejecución General
 
-Los ejecutables se generan en la carpeta build.
+Los ejecutables se generan en la carpeta build. Ya sea en cli o en ui
 
 Parámetros:
 
-
-
-Ejemplos:
-
-```sh
-
-```
+-n  Nùmero de Cores, fijado en 5 
 
 ## Ejecutar
 
 ```sh
-cmake --build .
+mpirun --oversubscribe -n 5 ./ChatMode
 ```
 
 ## Logros obtenidos
